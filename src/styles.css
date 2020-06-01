@@ -8,11 +8,6 @@ body {
   font-size: 14px;
 }
 
-div {
-  width: 100%;
-  margin: 20px;
-}
-
 div li {
   display: flex;
   align-items: center;
@@ -23,17 +18,41 @@ div li + li {
 }
 
 button {
-  background: #7159c1;
+  background: #393e42;
   color: #fff;
   border: 0;
-  padding: 10px 15px;
+  padding: 4px 10px;
   cursor: pointer;
   margin-top: 15px;
   font-weight: bold;
   font-size: 14px;
 }
 
-div li button {
+.btnRemove {
   margin: 0 15px;
-  background: #ca4949;
+  background: #990000;
+}
+
+.itemLike h6 {
+  margin: 0px 5px;
+}
+
+.btnLike {
+  color: black;
+  background-color: #F0F0F0;
+  padding: 0 0;
+}
+
+.header {
+  background-color: #24292e;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.body{
+  background-color: #F0F0F0;
+}
+
+.header .img-logo{
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
