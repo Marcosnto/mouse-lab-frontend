@@ -1,0 +1,85 @@
+/* Variables */
+$mainColor: #f0f0f0;
+$headColor: #24292e;
+
+@mixin buttonIcon($color) {
+  background-color: none;
+  background: none;
+  padding: 0 0;
+  color: $color;
+}
+
+/* --- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+}
+
+.body {
+  background-color: $mainColor;
+}
+
+div li {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background: #393e42;
+  color: #fff;
+  border: 0;
+  padding: 4px 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.itemList {
+  margin-top: 15px;
+
+  .btnRemove {
+    margin: 0 15px;
+    background: purple;
+  }
+  .btnFavorite {
+    @include buttonIcon(gold);
+  }
+  .btnLike {
+    @include buttonIcon(green);
+  }
+  .btnDislike {
+    @include buttonIcon(red);
+  }
+}
+
+.itemLike h6 {
+  margin: 0px 5px;
+}
+
+.header {
+  background-color: $headColor;
+  text-align: center;
+  .img-logo {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+.top-menu{
+  padding: 0px !important;
+  background-color: $mainColor;
+  margin-bottom: 80px;
+  .collapse {
+    justify-content: center;
+    li{
+      font-size: 20px;
+    }
+  }
+}

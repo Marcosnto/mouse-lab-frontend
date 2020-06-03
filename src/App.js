@@ -1,12 +1,13 @@
 import React, { useState, useEffect, Fragment } from "react";
 
-import "./styles.css";
+import "./styles.scss";
 import "bootstrap/dist/css/bootstrap.min.css"
 
 
 import api from "./services/api";
 import List from './components/List'
 import Header from './components/Header'
+import UpMenu from './components/UpMenu'
 
 
 
@@ -47,12 +48,12 @@ export default function App() {
     }
   }
 
-  async function handleLike(id){
+  async function handleLike(id) {
     const response = await api.post(`repositories/${id}/like`);
     const newRepositories = repositories;
 
-    repositories.filter((repository,index) => {
-      if (repository.id === id){
+    repositories.filter((repository, index) => {
+      if (repository.id === id) {
         repositories[index] = response.data;
       }
     })
@@ -60,12 +61,12 @@ export default function App() {
     setRepositories([...newRepositories]);
   }
 
-  async function handleDislike(id){
+  async function handleDislike(id) {
     const response = await api.post(`repositories/${id}/dislike`);
     const newRepositories = repositories;
 
-    repositories.filter((repository,index) => {
-      if (repository.id === id){
+    repositories.filter((repository, index) => {
+      if (repository.id === id) {
         repositories[index] = response.data;
       }
     })
@@ -76,15 +77,16 @@ export default function App() {
   return (
     <Fragment>
       <Header />
+      <UpMenu />
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <List repositories={repositories} handleRemoveRepository={handleRemoveRepository} 
-            handleLike = { handleLike } handleDislike = { handleDislike } />
+            <List repositories={repositories} handleRemoveRepository={handleRemoveRepository}
+              handleLike={handleLike} handleDislike={handleDislike} />
           </div>
-          <div>
-            <button className = "btnAdd" onClick={handleAddRepository}>Adicionar</button>
-          </div>
+          {/* <div>
+            <button className="btnAdd" onClick={handleAddRepository}>Adicionar</button>
+          </div> */}
         </div>
       </div>
     </Fragment>
