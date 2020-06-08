@@ -1,13 +1,13 @@
 import React, { useState, useEffect, Fragment } from "react";
 
-import "./styles.scss";
+import "../../styles.scss";
 import "bootstrap/dist/css/bootstrap.min.css"
 
 
-import api from "./services/api";
-import List from './components/List'
-import Header from './components/Header'
-import UpMenu from './components/UpMenu'
+import api from "../../services/api";
+import List from '../../components/list/list'
+import Header from '../../components/header/header'
+import MenuHead from '../../components/header/menuHead'
 
 
 
@@ -39,10 +39,9 @@ export default function App() {
         if (repository.id === idToDelete) {
           repositories.splice(i, 1);
           console.log("removido");
-
+          
           setRepositories([...repositories]);
         }
-
         return repositories;
       });
     }
@@ -56,6 +55,7 @@ export default function App() {
       if (repository.id === id) {
         repositories[index] = response.data;
       }
+      return null;
     })
 
     setRepositories([...newRepositories]);
@@ -69,6 +69,7 @@ export default function App() {
       if (repository.id === id) {
         repositories[index] = response.data;
       }
+      return null;
     })
 
     setRepositories([...newRepositories]);
@@ -77,16 +78,16 @@ export default function App() {
   return (
     <Fragment>
       <Header />
-      <UpMenu />
+      <MenuHead />
       <div className="container">
         <div className="row">
           <div className="col-12">
             <List repositories={repositories} handleRemoveRepository={handleRemoveRepository}
               handleLike={handleLike} handleDislike={handleDislike} />
           </div>
-          {/* <div>
+          <div>
             <button className="btnAdd" onClick={handleAddRepository}>Adicionar</button>
-          </div> */}
+          </div>
         </div>
       </div>
     </Fragment>
