@@ -5,7 +5,7 @@ import Home from "./Pages/Home/home";
 import Favorites from "./Pages/Favorites/favorites";
 import addNew from "./Pages/AddNew/addNew";
 import NotFound from "./Pages/NotFound/notFound";
-import toManage from "./Pages/Manage/toManage"
+import toManage from "./Pages/Manage/toManage";
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 

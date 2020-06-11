@@ -34,8 +34,6 @@ button {
   font-size: 14px;
 }
 
-
-
 .header {
   background-color: $headColor;
   text-align: center;
@@ -45,14 +43,22 @@ button {
   }
 }
 
-.top-menu{
+.table {
+  tr {
+    td {
+      vertical-align: bottom;
+    }
+  }
+}
+
+.top-menu {
   padding: 0px !important;
   background-color: $mainColor;
   margin-bottom: 40px;
   .collapse {
     justify-content: center;
-    li{
-      font-size: 20px;
+    li {
+      font-size: 26px;
     }
   }
 }
