@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Header from '../../components/header/header'
-import MenuHead from '../../components/header/menuHead'
+import Header from '../../Components/Header/header'
+import MenuHead from '../../Components/Header/menuHead'
 
 export default function NotFound () {
 
