@@ -26,3 +26,10 @@ On this appplication is possible to: add a repository, made the  repository favo
 <p>The API was made by myself based on a Node challenge.</p>
 <a href="https://github.com/Marcosnto/git-challenge-backend"> Git Challenge Back-end </a>
 
+<h2> How to build </h2>
+<ol>
+  <li>Clone the API and execute 'yarn' for dependencies</li>
+  <li>After step 1 execute 'npm/yarn start'</li>
+  <li>Clone this repository and execute 'npm/yarn start'</li>
+  <li>and now it's working 🙅 (on my PC worked 😅) </li>
+</ol> 
