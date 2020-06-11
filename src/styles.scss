@@ -2,13 +2,6 @@
 $mainColor: #f0f0f0;
 $headColor: #24292e;
 
-@mixin buttonIcon($color) {
-  background-color: none;
-  background: none;
-  padding: 0 0;
-  color: $color;
-}
-
 /* --- */
 
 * {
@@ -41,27 +34,7 @@ button {
   font-size: 14px;
 }
 
-.itemList {
-  margin-top: 15px;
 
-  .btnRemove {
-    margin: 0 15px;
-    background: purple;
-  }
-  .btnFavorite {
-    @include buttonIcon(gold);
-  }
-  .btnLike {
-    @include buttonIcon(green);
-  }
-  .btnDislike {
-    @include buttonIcon(red);
-  }
-}
-
-.itemLike h6 {
-  margin: 0px 5px;
-}
 
 .header {
   background-color: $headColor;
@@ -75,7 +48,7 @@ button {
 .top-menu{
   padding: 0px !important;
   background-color: $mainColor;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   .collapse {
     justify-content: center;
     li{

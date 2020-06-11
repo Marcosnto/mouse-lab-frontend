@@ -1,0 +1,51 @@
+@mixin buttonIcon($color) {
+  background-color: none;
+  background: none;
+  padding: 0 0;
+  color: $color;
+}
+
+.list-repositories {
+  .name-link {
+    font-size: 25px;
+    margin-right: 20px;
+  }
+}
+
+.mb40{
+  margin-bottom: 40px;
+}
+
+.mt30{
+  margin-top: 30px;
+}
+
+.mt15{
+  margin-top: 15px;
+}
+
+.itemList {
+  margin-top: 15px;
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.btnRemove {
+  margin: 0 15px;
+  background: #E50000;
+}
+.btnFavorite {
+  font-size: 22px;
+  margin-left: 10px;
+  @include buttonIcon(#e5e500);
+}
+.btnLike {
+  font-size: 22px;
+  @include buttonIcon(green);
+}
+
+.itemLike h6 {
+  font-size: 22px;
+  margin: 0px 5px;
+}
