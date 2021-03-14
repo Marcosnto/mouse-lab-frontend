@@ -1,6 +1,6 @@
 <h1>Mouse Repository 🐭</h1>
 
-<p>Application based on ReactJS Rockseat challenge. 
+<p>Application based on ReactJS <a href="https://rocketseat.com.br/">Rockseat</a> challenge. 
 
 On this appplication is possible to: add a repository, made the  repository favorite, list the favorites repositories and remove a repository.
 </p> 
@@ -28,8 +28,34 @@ On this appplication is possible to: add a repository, made the  repository favo
 
 <h2> How to build </h2>
 <ol>
-  <li>Clone the API and execute 'yarn' for dependencies</li>
-  <li>After step 1 execute 'npm/yarn start'</li>
-  <li>Clone this repository and execute 'npm/yarn start'</li>
-  <li>and now it's working 🙅 (on my PC worked 😅) </li>
+  
+  <li>
+  <p>Clone the API</p>
+  
+  ```
+  git clone https://github.com/Marcosnto/mouse-lab-backend
+  ```
+  
+  </li>
+  <li>Install the dependencies:
+  
+  ```
+  yarn or npm install
+  ```
+  </li>
+  <li>Open the terminal and execute:
+  
+  ```
+  yarn start or npm start
+  ```
+  </li>
+  
+  <li>Clone this repository and make the step 2 and 3 again
+  
+  ```
+  git clone https://github.com/Marcosnto/mouse-lab-frontend
+  ```
+  </li>
+  
+  <li>Now it's working 🙅 (on my PC worked 😅) </li>
 </ol> 
